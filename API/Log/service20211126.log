@@ -1,0 +1,1720 @@
+2021-11-26 14:22:15.557 -03:00 [INF] Starting host
+2021-11-26 14:22:16.380 -03:00 [INF] User profile is available. Using 'C:\Users\USUARIO\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-26 14:22:17.752 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:22:20.928 -03:00 [INF] Executed DbCommand (192ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2021-11-26 14:22:22.209 -03:00 [INF] Executed DbCommand (190ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2021-11-26 14:22:22.406 -03:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT migration_id, product_version
+FROM "__EFMigrationsHistory"
+ORDER BY migration_id;
+2021-11-26 14:22:22.431 -03:00 [INF] No migrations were applied. The database is already up to date.
+2021-11-26 14:22:23.737 -03:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2021-11-26 14:22:23.924 -03:00 [INF] Executed DbCommand (184ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT migration_id, product_version
+FROM "__EFMigrationsHistory"
+ORDER BY migration_id;
+2021-11-26 14:22:24.253 -03:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM usuarios AS u)
+2021-11-26 14:22:24.415 -03:00 [INF] Now listening on: https://localhost:5001
+2021-11-26 14:22:24.417 -03:00 [INF] Now listening on: http://localhost:5000
+2021-11-26 14:22:24.419 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-26 14:22:24.421 -03:00 [INF] Hosting environment: Development
+2021-11-26 14:22:24.424 -03:00 [INF] Content root path: C:\Users\USUARIO\Documents\ustart-api-final\API
+2021-11-26 14:22:40.816 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/cliente - -
+2021-11-26 14:22:41.390 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:22:41.395 -03:00 [INF] Authorization was successful.
+2021-11-26 14:22:41.397 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.Get (API)'
+2021-11-26 14:22:41.414 -03:00 [INF] Route matched with {action = "Get", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:22:41.423 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:22:41.644 -03:00 [INF] Executed DbCommand (180ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c.id, c.ativo, c.bairro, c.cep, c.cnpj, c.cpf, c.cidade_id, c.cidade_nome, c.codigo_externo, c.complemento, c.email, c.estado_id, c.fone, c.limite_de_credito, c.nome, c.numero, c.razao_social, c.rua
+FROM clientes AS c
+2021-11-26 14:22:41.757 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UStart.Domain.Entities.Cliente, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-26 14:22:41.812 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.Get (API) in 390.0551ms
+2021-11-26 14:22:41.814 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.Get (API)'
+2021-11-26 14:22:41.826 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/cliente - - - 200 - application/json;+charset=utf-8 1011.6424ms
+2021-11-26 14:23:56.897 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/cliente application/json 379
+2021-11-26 14:23:56.903 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:23:56.905 -03:00 [INF] Authorization was successful.
+2021-11-26 14:23:56.907 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.Adicionar (API)'
+2021-11-26 14:23:56.917 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ClienteCommand) on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:23:56.989 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:23:57.304 -03:00 [ERR] Failed executing DbCommand (188ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Boolean), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Decimal), @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO clientes (id, ativo, bairro, cep, cnpj, cpf, cidade_id, cidade_nome, codigo_externo, complemento, email, estado_id, fone, limite_de_credito, nome, numero, razao_social, rua)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2021-11-26 14:23:57.503 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:23:57.520 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.Adicionar (API) in 599.0529ms
+2021-11-26 14:23:57.521 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.Adicionar (API)'
+2021-11-26 14:23:57.524 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ClienteWorkflow.Add(ClienteCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ClienteWorkflow.cs:line 24
+   at UStart.API.Controllers.ClienteController.Adicionar(ClienteCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ClienteController.cs:line 59
+   at lambda_method270(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:23:57.672 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/cliente application/json 379 - 500 0 - 774.7623ms
+2021-11-26 14:24:00.862 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/cliente application/json 379
+2021-11-26 14:24:00.872 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:24:00.875 -03:00 [INF] Authorization was successful.
+2021-11-26 14:24:00.876 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.Adicionar (API)'
+2021-11-26 14:24:00.877 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ClienteCommand) on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:24:00.894 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:24:01.068 -03:00 [ERR] Failed executing DbCommand (171ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Boolean), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Decimal), @p14='?', @p15='?', @p16='?', @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO clientes (id, ativo, bairro, cep, cnpj, cpf, cidade_id, cidade_nome, codigo_externo, complemento, email, estado_id, fone, limite_de_credito, nome, numero, razao_social, rua)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2021-11-26 14:24:01.241 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:24:01.260 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.Adicionar (API) in 368.8679ms
+2021-11-26 14:24:01.261 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.Adicionar (API)'
+2021-11-26 14:24:01.263 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_clientes"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_clientes"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: clientes
+    ConstraintName: pk_clientes
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ClienteWorkflow.Add(ClienteCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ClienteWorkflow.cs:line 24
+   at UStart.API.Controllers.ClienteController.Adicionar(ClienteCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ClienteController.cs:line 59
+   at lambda_method270(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:24:01.286 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/cliente application/json 379 - 500 0 - 423.9209ms
+2021-11-26 14:24:16.177 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2021-11-26 14:24:16.178 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:24:16.179 -03:00 [INF] Authorization was successful.
+2021-11-26 14:24:16.180 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.GetPorId (API)'
+2021-11-26 14:24:16.188 -03:00 [INF] Route matched with {action = "GetPorId", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPorId(System.Guid) on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:24:16.194 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:24:16.405 -03:00 [INF] Executed DbCommand (173ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c.id, c.ativo, c.bairro, c.cep, c.cnpj, c.cpf, c.cidade_id, c.cidade_nome, c.codigo_externo, c.complemento, c.email, c.estado_id, c.fone, c.limite_de_credito, c.nome, c.numero, c.razao_social, c.rua
+FROM clientes AS c
+WHERE c.id = @__id_0
+LIMIT 1
+2021-11-26 14:24:16.409 -03:00 [INF] Executing OkObjectResult, writing value of type 'UStart.Domain.Entities.Cliente'.
+2021-11-26 14:24:16.410 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.GetPorId (API) in 219.5413ms
+2021-11-26 14:24:16.412 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.GetPorId (API)'
+2021-11-26 14:24:16.414 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 - application/json;+charset=utf-8 237.4220ms
+2021-11-26 14:25:11.964 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 application/json 439
+2021-11-26 14:25:11.966 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:25:11.968 -03:00 [INF] Authorization was successful.
+2021-11-26 14:25:11.969 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.Atualizar (API)'
+2021-11-26 14:25:11.972 -03:00 [INF] Route matched with {action = "Atualizar", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Atualizar(System.Guid, UStart.Domain.Commands.ClienteCommand) on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:25:11.978 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:25:12.156 -03:00 [INF] Executed DbCommand (170ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c.id, c.ativo, c.bairro, c.cep, c.cnpj, c.cpf, c.cidade_id, c.cidade_nome, c.codigo_externo, c.complemento, c.email, c.estado_id, c.fone, c.limite_de_credito, c.nome, c.numero, c.razao_social, c.rua
+FROM clientes AS c
+WHERE c.id = @__id_0
+LIMIT 1
+2021-11-26 14:25:12.335 -03:00 [INF] Executed DbCommand (171ms) [Parameters=[@p17='?' (DbType = Guid), @p0='?' (DbType = Boolean), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Decimal), @p13='?', @p14='?', @p15='?', @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE clientes SET ativo = @p0, bairro = @p1, cep = @p2, cnpj = @p3, cpf = @p4, cidade_id = @p5, cidade_nome = @p6, codigo_externo = @p7, complemento = @p8, email = @p9, estado_id = @p10, fone = @p11, limite_de_credito = @p12, nome = @p13, numero = @p14, razao_social = @p15, rua = @p16
+WHERE id = @p17;
+2021-11-26 14:25:12.520 -03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-11-26 14:25:12.521 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.Atualizar (API) in 546.8647ms
+2021-11-26 14:25:12.523 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.Atualizar (API)'
+2021-11-26 14:25:12.524 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 application/json 439 - 200 0 - 560.0500ms
+2021-11-26 14:25:16.759 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 - -
+2021-11-26 14:25:16.760 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:25:16.761 -03:00 [INF] Authorization was successful.
+2021-11-26 14:25:16.762 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ClienteController.GetPorId (API)'
+2021-11-26 14:25:16.764 -03:00 [INF] Route matched with {action = "GetPorId", controller = "Cliente"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPorId(System.Guid) on controller UStart.API.Controllers.ClienteController (API).
+2021-11-26 14:25:16.766 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:25:16.941 -03:00 [INF] Executed DbCommand (170ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT c.id, c.ativo, c.bairro, c.cep, c.cnpj, c.cpf, c.cidade_id, c.cidade_nome, c.codigo_externo, c.complemento, c.email, c.estado_id, c.fone, c.limite_de_credito, c.nome, c.numero, c.razao_social, c.rua
+FROM clientes AS c
+WHERE c.id = @__id_0
+LIMIT 1
+2021-11-26 14:25:16.944 -03:00 [INF] Executing OkObjectResult, writing value of type 'UStart.Domain.Entities.Cliente'.
+2021-11-26 14:25:16.946 -03:00 [INF] Executed action UStart.API.Controllers.ClienteController.GetPorId (API) in 180.8807ms
+2021-11-26 14:25:16.948 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ClienteController.GetPorId (API)'
+2021-11-26 14:25:16.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/cliente/3fa85f64-5717-4562-b3fc-2c963f66afa6 - - - 200 - application/json;+charset=utf-8 190.6976ms
+2021-11-26 14:28:01.492 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/produto - -
+2021-11-26 14:28:01.498 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:28:01.502 -03:00 [INF] Authorization was successful.
+2021-11-26 14:28:01.503 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Get (API)'
+2021-11-26 14:28:01.509 -03:00 [INF] Route matched with {action = "Get", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:28:01.514 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:28:02.850 -03:00 [INF] Executed DbCommand (181ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem, g.id, g.codigo_externo, g.descricao
+FROM produtos AS p
+INNER JOIN grupo_produtos AS g ON p.grupo_produto_id = g.id
+2021-11-26 14:28:02.883 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UStart.Domain.Entities.Produto, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-26 14:28:02.888 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Get (API) in 1377.0951ms
+2021-11-26 14:28:02.890 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Get (API)'
+2021-11-26 14:28:02.891 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/produto - - - 200 - application/json;+charset=utf-8 1399.4582ms
+2021-11-26 14:30:27.180 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:30:27.181 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:30:27.182 -03:00 [INF] Authorization was successful.
+2021-11-26 14:30:27.183 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:30:27.187 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:30:27.194 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:30:27.384 -03:00 [ERR] Failed executing DbCommand (184ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:30:27.567 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:30:27.595 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 405.011ms
+2021-11-26 14:30:27.596 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:30:27.598 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:30:27.618 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 438.1935ms
+2021-11-26 14:30:33.508 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260
+2021-11-26 14:30:33.510 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:30:33.511 -03:00 [INF] Authorization was successful.
+2021-11-26 14:30:33.512 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:30:33.515 -03:00 [INF] Route matched with {action = "Atualizar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Atualizar(System.Guid, UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:30:33.520 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:30:33.699 -03:00 [INF] Executed DbCommand (173ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:30:33.885 -03:00 [ERR] Failed executing DbCommand (175ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?', @p1='?', @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE produtos SET codigo_externo = @p0, descricao = @p1, grupo_produto_id = @p2, nome = @p3, preco = @p4, url_imagem = @p5
+WHERE id = @p6;
+2021-11-26 14:30:34.063 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:30:34.081 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Atualizar (API) in 564.7333ms
+2021-11-26 14:30:34.083 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:30:34.085 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Update(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 36
+   at UStart.API.Controllers.ProdutoController.Atualizar(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 77
+   at lambda_method411(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:30:34.110 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260 - 500 0 - 601.0373ms
+2021-11-26 14:30:40.081 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - -
+2021-11-26 14:30:40.083 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:30:40.085 -03:00 [INF] Authorization was successful.
+2021-11-26 14:30:40.086 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:30:40.089 -03:00 [INF] Route matched with {action = "GetPorId", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPorId(System.Guid) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:30:40.092 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:30:40.269 -03:00 [INF] Executed DbCommand (175ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:30:40.272 -03:00 [INF] Executing OkObjectResult, writing value of type 'UStart.Domain.Entities.Produto'.
+2021-11-26 14:30:40.274 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.GetPorId (API) in 182.3762ms
+2021-11-26 14:30:40.275 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:30:40.276 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - - - 200 - application/json;+charset=utf-8 194.5373ms
+2021-11-26 14:30:48.228 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260
+2021-11-26 14:30:48.230 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:30:48.242 -03:00 [INF] Authorization was successful.
+2021-11-26 14:30:48.247 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:30:48.253 -03:00 [INF] Route matched with {action = "Atualizar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Atualizar(System.Guid, UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:30:48.256 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:30:48.431 -03:00 [INF] Executed DbCommand (173ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:30:48.613 -03:00 [ERR] Failed executing DbCommand (177ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?', @p1='?', @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE produtos SET codigo_externo = @p0, descricao = @p1, grupo_produto_id = @p2, nome = @p3, preco = @p4, url_imagem = @p5
+WHERE id = @p6;
+2021-11-26 14:30:48.797 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:30:48.815 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Atualizar (API) in 560.0481ms
+2021-11-26 14:30:48.817 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:30:48.819 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Update(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 36
+   at UStart.API.Controllers.ProdutoController.Atualizar(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 77
+   at lambda_method411(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:30:48.841 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260 - 500 0 - 613.4114ms
+2021-11-26 14:31:03.129 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260
+2021-11-26 14:31:03.133 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:31:03.137 -03:00 [INF] Authorization was successful.
+2021-11-26 14:31:03.140 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:31:03.141 -03:00 [INF] Route matched with {action = "Atualizar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Atualizar(System.Guid, UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:31:03.145 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:31:03.325 -03:00 [INF] Executed DbCommand (177ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:31:03.509 -03:00 [ERR] Failed executing DbCommand (181ms) [Parameters=[@p6='?' (DbType = Guid), @p0='?', @p1='?', @p2='?' (DbType = Guid), @p3='?', @p4='?' (DbType = Decimal), @p5='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE produtos SET codigo_externo = @p0, descricao = @p1, grupo_produto_id = @p2, nome = @p3, preco = @p4, url_imagem = @p5
+WHERE id = @p6;
+2021-11-26 14:31:03.694 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:31:03.711 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Atualizar (API) in 566.9874ms
+2021-11-26 14:31:03.712 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:31:03.713 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Update(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 36
+   at UStart.API.Controllers.ProdutoController.Atualizar(Guid id, ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 77
+   at lambda_method411(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:31:03.732 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260 - 500 0 - 603.0942ms
+2021-11-26 14:31:19.815 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/autenticacao/login application/json 62
+2021-11-26 14:31:19.816 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.AutenticacaoController.Login (API)'
+2021-11-26 14:31:19.820 -03:00 [INF] Route matched with {action = "Login", controller = "Autenticacao"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(UStart.Domain.Commands.LoginCommand) on controller UStart.API.Controllers.AutenticacaoController (API).
+2021-11-26 14:31:19.827 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:31:20.012 -03:00 [INF] Executed DbCommand (174ms) [Parameters=[@__hashMd5_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u.id, u.ativo, u.autenticacao, u.data_registro, u.email, u.nome
+FROM usuarios AS u
+WHERE (u.autenticacao = @__hashMd5_0) AND u.ativo
+LIMIT 1
+2021-11-26 14:31:20.047 -03:00 [INF] Executing OkObjectResult, writing value of type 'UStart.Domain.Results.LoginResult'.
+2021-11-26 14:31:20.049 -03:00 [INF] Executed action UStart.API.Controllers.AutenticacaoController.Login (API) in 227.2211ms
+2021-11-26 14:31:20.050 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.AutenticacaoController.Login (API)'
+2021-11-26 14:31:20.053 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/autenticacao/login application/json 62 - 200 - application/json;+charset=utf-8 237.6758ms
+2021-11-26 14:31:26.404 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:31:26.405 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:31:26.411 -03:00 [INF] Authorization was successful.
+2021-11-26 14:31:26.412 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:31:26.413 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:31:26.416 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:31:26.593 -03:00 [ERR] Failed executing DbCommand (173ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:31:26.773 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:31:26.789 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 374.7691ms
+2021-11-26 14:31:26.791 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:31:26.792 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "pk_produtos"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "pk_produtos"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: pk_produtos
+    File: nbtinsert.c
+    Line: 649
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:31:26.811 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 406.6366ms
+2021-11-26 14:31:30.758 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - -
+2021-11-26 14:31:30.760 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:31:30.761 -03:00 [INF] Authorization was successful.
+2021-11-26 14:31:30.762 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:31:30.763 -03:00 [INF] Route matched with {action = "GetPorId", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPorId(System.Guid) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:31:30.766 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:31:30.950 -03:00 [INF] Executed DbCommand (180ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:31:30.954 -03:00 [INF] Executing OkObjectResult, writing value of type 'UStart.Domain.Entities.Produto'.
+2021-11-26 14:31:30.956 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.GetPorId (API) in 190.4199ms
+2021-11-26 14:31:30.957 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:31:30.958 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - - - 200 - application/json;+charset=utf-8 200.0446ms
+2021-11-26 14:32:26.763 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - -
+2021-11-26 14:32:26.765 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:26.766 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:26.767 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Deletar (API)'
+2021-11-26 14:32:26.771 -03:00 [INF] Route matched with {action = "Deletar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Deletar(System.Guid) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:26.775 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:26.959 -03:00 [INF] Executed DbCommand (182ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:32:27.159 -03:00 [INF] Executed DbCommand (190ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM produtos
+WHERE id = @p0;
+2021-11-26 14:32:27.350 -03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2021-11-26 14:32:27.352 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Deletar (API) in 578.9637ms
+2021-11-26 14:32:27.354 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Deletar (API)'
+2021-11-26 14:32:27.355 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - - - 200 0 - 592.1101ms
+2021-11-26 14:32:30.857 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:32:30.858 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:30.859 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:30.860 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:30.861 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:30.864 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:31.049 -03:00 [ERR] Failed executing DbCommand (183ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:32:31.243 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:32:31.258 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 395.0158ms
+2021-11-26 14:32:31.260 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:31.261 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:32:31.279 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 422.8143ms
+2021-11-26 14:32:35.558 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - -
+2021-11-26 14:32:35.559 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:35.560 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:35.561 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:32:35.563 -03:00 [INF] Route matched with {action = "GetPorId", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPorId(System.Guid) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:35.565 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:35.750 -03:00 [INF] Executed DbCommand (183ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:32:35.754 -03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2021-11-26 14:32:35.755 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.GetPorId (API) in 190.6828ms
+2021-11-26 14:32:35.757 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.GetPorId (API)'
+2021-11-26 14:32:35.758 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - - - 204 0 - 200.0866ms
+2021-11-26 14:32:41.365 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:32:41.367 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:41.370 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:41.371 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:41.378 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:41.381 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:41.565 -03:00 [ERR] Failed executing DbCommand (182ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:32:41.755 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:32:41.772 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 392.0783ms
+2021-11-26 14:32:41.774 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:41.775 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:32:41.793 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 427.4446ms
+2021-11-26 14:32:43.399 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:32:43.403 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:43.404 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:43.405 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:43.407 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:43.409 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:43.595 -03:00 [ERR] Failed executing DbCommand (183ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:32:43.781 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:32:43.799 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 390.5376ms
+2021-11-26 14:32:43.801 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:32:43.802 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:32:43.821 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 421.0769ms
+2021-11-26 14:32:45.931 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - -
+2021-11-26 14:32:45.932 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:32:45.933 -03:00 [INF] Authorization was successful.
+2021-11-26 14:32:45.934 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Deletar (API)'
+2021-11-26 14:32:45.936 -03:00 [INF] Route matched with {action = "Deletar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Deletar(System.Guid) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:32:45.939 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:32:46.123 -03:00 [INF] Executed DbCommand (182ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:32:46.127 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[UStart.Domain.Workflows.ErrorTracking.Error, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-26 14:32:46.131 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Deletar (API) in 192.6208ms
+2021-11-26 14:32:46.132 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Deletar (API)'
+2021-11-26 14:32:46.134 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 - - - 400 - application/json;+charset=utf-8 203.1702ms
+2021-11-26 14:33:08.660 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249
+2021-11-26 14:33:08.662 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:33:08.663 -03:00 [INF] Authorization was successful.
+2021-11-26 14:33:08.663 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:33:08.665 -03:00 [INF] Route matched with {action = "Adicionar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Adicionar(UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:33:08.667 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:33:09.898 -03:00 [ERR] Failed executing DbCommand (173ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Guid), @p4='?', @p5='?' (DbType = Decimal), @p6='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO produtos (id, codigo_externo, descricao, grupo_produto_id, nome, preco, url_imagem)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2021-11-26 14:33:10.074 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'UStart.Infrastructure.Context.UStartContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2021-11-26 14:33:10.091 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Adicionar (API) in 1424.3898ms
+2021-11-26 14:33:10.092 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Adicionar (API)'
+2021-11-26 14:33:10.094 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23503: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+   at Npgsql.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|194_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23503
+    MessageText: insert or update on table "produtos" violates foreign key constraint "fk_produtos_grupo_produtos_grupo_produto_id"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: produtos
+    ConstraintName: fk_produtos_grupo_produtos_grupo_produto_id
+    File: ri_triggers.c
+    Line: 2465
+    Routine: ri_ReportViolation
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at UStart.Infrastructure.Context.UStartContext.SaveChanges() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\Context\UStartContext.cs:line 36
+   at UStart.Infrastructure.UoW.UnitOfWork.Commit() in C:\Users\USUARIO\Documents\ustart-api-final\Infrastructure\UoW\UnitOfWork.cs:line 17
+   at UStart.Domain.Workflows.ProdutoWorkflow.Add(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\Domain\Workflows\ProdutoWorkflow.cs:line 24
+   at UStart.API.Controllers.ProdutoController.Adicionar(ProdutoCommand command) in C:\Users\USUARIO\Documents\ustart-api-final\API\Controllers\ProdutoController.cs:line 59
+   at lambda_method395(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2021-11-26 14:33:10.115 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/v1/produto application/json 249 - 500 0 - 1454.8906ms
+2021-11-26 14:33:11.934 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260
+2021-11-26 14:33:11.937 -03:00 [INF] Successfully validated the token.
+2021-11-26 14:33:11.938 -03:00 [INF] Authorization was successful.
+2021-11-26 14:33:11.939 -03:00 [INF] Executing endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:33:11.940 -03:00 [INF] Route matched with {action = "Atualizar", controller = "Produto"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Atualizar(System.Guid, UStart.Domain.Commands.ProdutoCommand) on controller UStart.API.Controllers.ProdutoController (API).
+2021-11-26 14:33:11.942 -03:00 [INF] Entity Framework Core 5.0.2 initialized 'UStartContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: MigrationsAssembly=Infrastructure using snake-case naming  (culture=)
+2021-11-26 14:33:12.114 -03:00 [INF] Executed DbCommand (170ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.codigo_externo, p.descricao, p.grupo_produto_id, p.nome, p.preco, p.url_imagem
+FROM produtos AS p
+WHERE p.id = @__id_0
+LIMIT 1
+2021-11-26 14:33:12.118 -03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[UStart.Domain.Workflows.ErrorTracking.Error, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-11-26 14:33:12.120 -03:00 [INF] Executed action UStart.API.Controllers.ProdutoController.Atualizar (API) in 178.9001ms
+2021-11-26 14:33:12.121 -03:00 [INF] Executed endpoint 'UStart.API.Controllers.ProdutoController.Atualizar (API)'
+2021-11-26 14:33:12.123 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5000/api/v1/produto/18881d80-7406-4cc7-a32d-97c429fde8d4 application/json 260 - 400 - application/json;+charset=utf-8 188.6721ms
+2021-11-26 14:36:00.487 -03:00 [INF] Application is shutting down...

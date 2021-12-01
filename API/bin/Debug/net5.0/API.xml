@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="T:UStart.API.Controllers.ClienteController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.ClienteController.Get">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ClienteController.GetPorId(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ClienteController.Adicionar(UStart.Domain.Commands.ClienteCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ClienteController.Atualizar(System.Guid,UStart.Domain.Commands.ClienteCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ClienteController.Deletar(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.FormaPagamentoController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.FormaPagamentoController.GetPesquisar(System.String)">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.FormaPagamentoController.GetPorId(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.FormaPagamentoController.Adicionar(UStart.Domain.Commands.FormaPagamentoCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.FormaPagamentoController.Atualizar(System.Guid,UStart.Domain.Commands.FormaPagamentoCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.FormaPagamentoController.Deletar(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.GrupoProdutoController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoController.GetGruposProdutos(System.String)">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoController.GetGrupoProduto(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoController.AdicionarGrupoProduto(UStart.Domain.Commands.GrupoProdutoCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoController.AtualizarGrupoProduto(System.Guid,UStart.Domain.Commands.GrupoProdutoCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoController.DeletarGrupoProduto(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.GrupoProdutoExemploController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoExemploController.GetGruposProdutos">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoExemploController.GetGrupoProduto(System.String)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoExemploController.AdicionarGrupoProduto(System.Object)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoExemploController.AtualizarGrupoProduto(System.Object)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.GrupoProdutoExemploController.DeletarGrupoProduto(System.String)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.OrcamentoController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.OrcamentoController.Get(System.String)">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.OrcamentoController.GetPorId(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.OrcamentoController.Adicionar(UStart.Domain.Commands.OrcamentoCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.OrcamentoController.Atualizar(System.Guid,UStart.Domain.Commands.OrcamentoCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.OrcamentoController.Deletar(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.PedidoController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.PedidoController.Get">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.PedidoController.GetPorId(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.PedidoController.Adicionar(UStart.Domain.Commands.PedidoCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.PedidoController.Atualizar(System.Guid,UStart.Domain.Commands.PedidoCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.PedidoController.Deletar(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.ProdutoController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Controllers.ProdutoController.Get">
+            <summary>
+            Consultar todos os grupos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ProdutoController.GetPorId(System.Guid)">
+            <summary>
+            Consultar apenas um grupo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ProdutoController.Adicionar(UStart.Domain.Commands.ProdutoCommand)">
+            <summary>
+            Adicionar (insert) um grupo
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ProdutoController.Atualizar(System.Guid,UStart.Domain.Commands.ProdutoCommand)">
+            <summary>
+            Atualizar (update) um grupo
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UStart.API.Controllers.ProdutoController.Deletar(System.Guid)">
+            <summary>
+            Excluir um grupo por Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UStart.API.Controllers.UsuarioController">
+            <summary>
+            Exemplo de controller
+            </summary>
+        </member>
+        <member name="M:UStart.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            CUIDADO!
+            -----------------------------
+            Quando alterar a ordem de contru��o do ApplicationBulder pode gerar problema da aplica��o        
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
